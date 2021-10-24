@@ -27,6 +27,19 @@ export class AccountService {
 
  }
 
+//  login(model: any){
+//    return this.http.post(this.baseUrl + 'account/login', model).subscribe(response => {
+//      const user = Response;
+//      if (user) {
+//        localStorage.setItem('user', JSON.stringify(user));
+//      }
+//    })
+//  }
+
+
+
+
+
  register(model: User){
 
   return this.http.post(this.baseUrl + 'account/register', model).pipe(
